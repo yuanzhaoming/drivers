@@ -1,0 +1,14 @@
+..\Output\spi_task.o: ..\task\spi_task.c
+..\Output\spi_task.o: ..\task\spi_task.h
+..\Output\spi_task.o: ..\kernel-include\rtthread.h
+..\Output\spi_task.o: ..\USER\rtconfig.h
+..\Output\spi_task.o: ..\kernel-include\rtdebug.h
+..\Output\spi_task.o: ..\kernel-include\rtdef.h
+..\Output\spi_task.o: F:\stm32\Keil\ARM\RV31\INC\stdarg.h
+..\Output\spi_task.o: ..\kernel-include\rtservice.h
+..\Output\spi_task.o: ..\kernel-include\rtm.h
+..\Output\spi_task.o: ..\kernel-include\rtthread.h
+..\Output\spi_task.o: ..\finsh\finsh.h
+..\Output\spi_task.o: F:\stm32\Keil\ARM\RV31\INC\ctype.h
+..\Output\spi_task.o: F:\stm32\Keil\ARM\RV31\INC\stdlib.h
+..\Output\spi_task.o: F:\stm32\Keil\ARM\RV31\INC\string.h

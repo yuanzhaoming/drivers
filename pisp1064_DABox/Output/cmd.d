@@ -1,0 +1,13 @@
+..\Output\cmd.o: ..\finsh\cmd.c
+..\Output\cmd.o: ..\kernel-include\rtthread.h
+..\Output\cmd.o: ..\USER\rtconfig.h
+..\Output\cmd.o: ..\kernel-include\rtdebug.h
+..\Output\cmd.o: ..\kernel-include\rtdef.h
+..\Output\cmd.o: F:\stm32\Keil\ARM\RV31\INC\stdarg.h
+..\Output\cmd.o: ..\kernel-include\rtservice.h
+..\Output\cmd.o: ..\kernel-include\rtm.h
+..\Output\cmd.o: ..\kernel-include\rtthread.h
+..\Output\cmd.o: ..\finsh\finsh.h
+..\Output\cmd.o: F:\stm32\Keil\ARM\RV31\INC\ctype.h
+..\Output\cmd.o: F:\stm32\Keil\ARM\RV31\INC\stdlib.h
+..\Output\cmd.o: F:\stm32\Keil\ARM\RV31\INC\string.h

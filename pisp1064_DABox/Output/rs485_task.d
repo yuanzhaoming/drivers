@@ -1,0 +1,10 @@
+..\Output\rs485_task.o: ..\task\rs485_task.c
+..\Output\rs485_task.o: ..\task\rs485_task.h
+..\Output\rs485_task.o: ..\kernel-include\rtthread.h
+..\Output\rs485_task.o: ..\USER\rtconfig.h
+..\Output\rs485_task.o: ..\kernel-include\rtdebug.h
+..\Output\rs485_task.o: ..\kernel-include\rtdef.h
+..\Output\rs485_task.o: F:\stm32\Keil\ARM\RV31\INC\stdarg.h
+..\Output\rs485_task.o: ..\kernel-include\rtservice.h
+..\Output\rs485_task.o: ..\kernel-include\rtm.h
+..\Output\rs485_task.o: ..\kernel-include\rtthread.h

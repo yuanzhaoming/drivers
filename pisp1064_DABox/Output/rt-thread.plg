@@ -1,0 +1,1644 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\pisp1064_Prj\stm32_prj\pisp1064_DABox\USER\STM32-DEMO.uvproj
+Project File Date:  10/28/2016
+
+<h2>Output:</h2>
+Build target 'DSP950_App'
+assembling startup_stm32f10x_hd.s...
+assembling context_rvds.S...
+..\CMSIS\startup\context_rvds.S(206): warning: A1581W: Added 2 bytes of padding at address 0xd6
+..\CMSIS\startup\context_rvds.S:   206 000000d8     END
+..\CMSIS\startup\context_rvds.S: 0 Errors, 1 Warning
+compiling cpuport.c...
+compiling backtrace.c...
+compiling showmem.c...
+compiling stm32f10x_it.c...
+compiling startup.c...
+startup.c(73): warning:  #223-D: function "rt_hw_board_init" declared implicitly
+startup.c:       rt_hw_board_init();
+startup.c:       ^
+startup.c(107): warning:  #223-D: function "finsh_system_init" declared implicitly
+startup.c:      finsh_system_init(); //初始化FINSH线程
+startup.c:      ^
+startup.c(108): warning:  #223-D: function "finsh_set_device" declared implicitly
+startup.c:      finsh_set_device("uart1"); //设置FINSH使用的输入输出设备为 "uart1"
+startup.c:      ^
+startup.c(125): warning:  #550-D: variable "level" was set but never used
+startup.c:      rt_uint32_t level;
+startup.c:                  ^
+startup.c: startup.c: 4 warnings, 0 errors
+compiling application.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+application.c(112): warning:  #223-D: function "rt_hw_key_init" declared implicitly
+application.c:          rt_hw_key_init();
+application.c:          ^
+application.c(120): warning:  #223-D: function "rt_handle_key_input" declared implicitly
+application.c:                  key_input_number = rt_handle_key_input();
+application.c:                                     ^
+application.c(147): warning:  #223-D: function "rt_read_key_value" declared implicitly
+application.c:                                  if(rt_read_key_value(1) == 1)
+application.c:                                     ^
+application.c(191): warning:  #223-D: function "rt_read_key_value" declared implicitly
+application.c:                                  if(rt_read_key_value(2) == 1)
+application.c:                                     ^
+application.c(204): warning:  #223-D: function "rt_hw_led_mutex" declared implicitly
+application.c:                  rt_hw_led_mutex(g_i_key_led_handle_count);
+application.c:                  ^
+application.c(257): warning:  #177-D: variable "i_show_value" was declared but never referenced
+application.c:          int i_show_value = 0;
+application.c:              ^
+application.c(258): warning:  #177-D: variable "i_show_flag" was declared but never referenced
+application.c:          static int i_show_flag = 0;
+application.c:                     ^
+application.c(386): warning:  #223-D: function "SPI_DSP_Init" declared implicitly
+application.c:          SPI_DSP_Init();
+application.c:          ^
+application.c(399): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(405): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(413): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(419): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(426): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(432): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(439): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(445): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(452): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(458): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(465): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(471): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(475): warning:  #223-D: function "SPI_DSP_ReadByte" declared implicitly
+application.c:                  c_read_data = SPI_DSP_ReadByte();
+application.c:                                ^
+application.c(377): warning:  #177-D: variable "count" was declared but never referenced
+application.c:       unsigned int count=0;
+application.c:                    ^
+application.c(584): warning:  #223-D: function "IIC_Init" declared implicitly
+application.c:                  IIC_Init();
+application.c:                  ^
+application.c(585): warning:  #223-D: function "cs4385_set_iic_mode" declared implicitly
+application.c:                  i_CS4385_ret = cs4385_set_iic_mode(i_using_mode);//使用tdm模式
+application.c:                                 ^
+application.c(600): warning:  #186-D: pointless comparison of unsigned integer with zero
+application.c:          if((i_internal_value>5)||(i_internal_value<0))
+application.c:                                                    ^
+application.c(614): warning:  #223-D: function "rt_hw_stm32_eth_init" declared implicitly
+application.c:                  rt_hw_stm32_eth_init();
+application.c:                  ^
+application.c(615): warning:  #223-D: function "lwip_sys_init" declared implicitly
+application.c:                  lwip_sys_init();
+application.c:                  ^
+application.c(619): warning:  #223-D: function "tcpserv" declared implicitly
+application.c:                  tcpserv((void *) NULL);
+application.c:                  ^
+application.c: application.c: 35 warnings, 0 errors
+compiling echo.c...
+echo.h(10): warning:  #1-D: last line of file ends without a newline
+echo.h:                                                                                                                
+echo.h:                                                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                               ^
+echo.c(22): warning:  #223-D: function "rt_mq_send" declared implicitly
+echo.c:       rt_mq_send(&rx_mq, &msg, sizeof(struct rx_msg));
+echo.c:       ^
+echo.c(24): warning:  #223-D: function "rt_kprintf" declared implicitly
+echo.c:         rt_kprintf("indicated echo\r\n");  
+echo.c:         ^
+echo.c(38): warning:  #223-D: function "rt_device_find" declared implicitly
+echo.c:       device = (rt_device_t)rt_device_find("uart1");  
+echo.c:                             ^
+echo.c(42): warning:  #223-D: function "rt_device_set_rx_indicate" declared implicitly
+echo.c:           rt_device_set_rx_indicate(device, uart_input);  
+echo.c:           ^
+echo.c(44): warning:  #223-D: function "rt_device_open" declared implicitly
+echo.c:           rt_device_open(device, RT_DEVICE_OFLAG_RDWR);  
+echo.c:           ^
+echo.c(50): warning:  #223-D: function "rt_mq_recv" declared implicitly
+echo.c:           result = rt_mq_recv(&rx_mq, &msg, sizeof(struct rx_msg), 50);  
+echo.c:                    ^
+echo.c(63): warning:  #223-D: function "rt_device_read" declared implicitly
+echo.c:               rx_length = rt_device_read(msg.dev, 0, &uart_rx_buffer[0], rx_length);  
+echo.c:                           ^
+echo.c(66): warning:  #223-D: function "rt_device_write" declared implicitly
+echo.c:               rt_device_write(device, 0, &uart_rx_buffer[0], rx_length); 
+echo.c:               ^
+echo.c(82): warning:  #223-D: function "rt_mq_init" declared implicitly
+echo.c:       result = rt_mq_init(&rx_mq, "mqt", &msg_pool[0], 128 - sizeof(void*), sizeof(msg_pool), RT_IPC_FLAG_FIFO);  
+echo.c:                ^
+echo.c(86): warning:  #223-D: function "rt_kprintf" declared implicitly
+echo.c:           rt_kprintf("init message queue failed.\n");   
+echo.c:           ^
+echo.c(90): warning:  #223-D: function "rt_thread_create" declared implicitly
+echo.c:       thread = (rt_thread_t)rt_thread_create("devt",  
+echo.c:                             ^
+echo.c(95): warning:  #223-D: function "rt_thread_startup" declared implicitly
+echo.c:           rt_thread_startup(thread);  
+echo.c:           ^
+echo.c: echo.c: 122 warnings, 0 errors
+compiling spi_bus.c...
+compiling tcpserver.c...
+tcpserver.c(4): warning:  #177-D: variable "send_data" was declared but never referenced
+tcpserver.c:   static const char send_data[] = "This is TCP Server."; /* 鍙戦�佺敤鍒扮殑鏁版嵁 */
+tcpserver.c:                     ^
+tcpserver.c: tcpserver.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling clock.c...
+compiling device.c...
+compiling idle.c...
+compiling ipc.c...
+compiling irq.c...
+compiling kservice.c...
+compiling mem.c...
+compiling memheap.c...
+compiling mempool.c...
+compiling module.c...
+compiling object.c...
+compiling scheduler.c...
+compiling slab.c...
+compiling thread.c...
+compiling timer.c...
+compiling board.c...
+..\drivers\board.c(187): warning:  #223-D: function "rt_hw_usart_init" declared implicitly
+..\drivers\board.c:       rt_hw_usart_init();
+..\drivers\board.c:       ^
+..\drivers\board.c: ..\drivers\board.c: 1 warning, 0 errors
+compiling led.c...
+compiling usart.c...
+compiling spi_core.c...
+compiling spi_dev.c...
+compiling spi_flash_w25qxx.c...
+compiling rt_stm32f10x_spi.c...
+compiling rt_spi_flash_device.c...
+compiling enc28j60.c...
+..\drivers\enc28j60.c(192): warning:  #550-D: variable "duplex" was set but never used
+..\drivers\enc28j60.c:       int duplex;
+..\drivers\enc28j60.c:           ^
+..\drivers\enc28j60.c(897): warning:  #177-D: variable "stm32_eth_device" was declared but never referenced
+..\drivers\enc28j60.c:   static struct rt_stm32_eth stm32_eth_device;
+..\drivers\enc28j60.c:                              ^
+..\drivers\enc28j60.c(899): warning:  #177-D: variable "tx_wait" was declared but never referenced
+..\drivers\enc28j60.c:   static struct rt_semaphore tx_wait;
+..\drivers\enc28j60.c:                              ^
+..\drivers\enc28j60.c: ..\drivers\enc28j60.c: 3 warnings, 0 errors
+compiling lcd1602.c...
+lcd1602.c(317): warning:  #223-D: function "rt_thread_delay" declared implicitly
+lcd1602.c:              rt_thread_delay( RT_TICK_PER_SECOND / 100);
+lcd1602.c:              ^
+lcd1602.c(344): warning:  #223-D: function "rt_thread_delay" declared implicitly
+lcd1602.c:                      rt_thread_delay( RT_TICK_PER_SECOND / 100);
+lcd1602.c:                      ^
+lcd1602.c: lcd1602.c: 2 warnings, 0 errors
+compiling spi_instruction.c...
+..\drivers\spi_instruction.c(121): warning:  #550-D: variable "c_value" was set but never used
+..\drivers\spi_instruction.c:           unsigned char c_value;
+..\drivers\spi_instruction.c:                         ^
+..\drivers\spi_instruction.c: ..\drivers\spi_instruction.c: 1 warning, 0 errors
+compiling key_input.c...
+..\drivers\key_input.c(10): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_press_time[KEY_MAX_NUMBER] = 0; //检测到按键按下的时间
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(11): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_press_flag[KEY_MAX_NUMBER] = 0; //检测到按键按下的标志
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(12): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_pressed[KEY_MAX_NUMBER]    = 0;    //按键确实按下了的标志
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(48): warning:  #940-D: missing return statement at end of non-void function "rt_read_key_value"
+..\drivers\key_input.c:   }
+..\drivers\key_input.c:   ^
+..\drivers\key_input.c: ..\drivers\key_input.c: 4 warnings, 0 errors
+compiling IIC_CS4385.c...
+compiling internal_flash.c...
+compiling protocol.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\protocol.c(47): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\protocol.c:          prot_debug("CMD:0x%02X %02X %02X %02X ", (unsigned int)pCmd[0],
+..\drivers\protocol.c:          ^
+..\drivers\protocol.c(123): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\protocol.c:          prot_debug("op key type param1 param2 param3");
+..\drivers\protocol.c:          ^
+..\drivers\protocol.c: ..\drivers\protocol.c: 9 warnings, 0 errors
+compiling do_data.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\do_data.c(49): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                                   do_error("SendData2DSP_Handle Error, Continue");
+..\drivers\do_data.c:                                   ^
+..\drivers\do_data.c(69): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(75): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Get CMD ID error");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(61): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(62): warning:  #550-D: variable "cmd_id" was set but never used
+..\drivers\do_data.c:           int cmd_id = 0;
+..\drivers\do_data.c:               ^
+..\drivers\do_data.c(107): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("prot_cmd_to_msg Error, Return");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(112): warning:  #940-D: missing return statement at end of non-void function "do_add_cmd"
+..\drivers\do_data.c:   }
+..\drivers\do_data.c:   ^
+..\drivers\do_data.c(139): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(136): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(165): warning:  #68-D: integer conversion resulted in a change of sign
+..\drivers\do_data.c:           unsigned int cmd_id = -1;
+..\drivers\do_data.c:                                 ^
+..\drivers\do_data.c(171): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Get's CMD Index Invalid");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(193): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(163): warning:  #550-D: variable "index" was set but never used
+..\drivers\do_data.c:           unsigned int index = CMD_DATA_INDEX_INVALID;
+..\drivers\do_data.c:                        ^
+..\drivers\do_data.c(164): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(165): warning:  #550-D: variable "cmd_id" was set but never used
+..\drivers\do_data.c:           unsigned int cmd_id = -1;
+..\drivers\do_data.c:                        ^
+..\drivers\do_data.c(166): warning:  #177-D: variable "oper_id" was declared but never referenced
+..\drivers\do_data.c:           enum SqliteOperateId oper_id = ID_GET;
+..\drivers\do_data.c:                                ^
+..\drivers\do_data.c(168): warning:  #177-D: variable "ret" was declared but never referenced
+..\drivers\do_data.c:           int ret = 0;
+..\drivers\do_data.c:               ^
+..\drivers\do_data.c: ..\drivers\do_data.c: 24 warnings, 0 errors
+compiling inc.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\inc.c(236): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("get_cmd_desc_s Error, Key error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(249): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\drivers\inc.c:       if ((index < CMD_DATA_INDEX_MIN ) || (index > CMD_DATA_INDEX_MAX)) {
+..\drivers\inc.c:                  ^
+..\drivers\inc.c(265): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get index invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(300): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("get_cmd_desc_s Error, Key error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(318): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Not find description, Type error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(324): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get cmd_desc_head invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(329): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\drivers\inc.c:       if ((index < CMD_DATA_INDEX_MIN) || (index > CMD_DATA_INDEX_MAX)) {
+..\drivers\inc.c:                  ^
+..\drivers\inc.c(330): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get index invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(381): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("inc_transfer_fun_register Error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(372): warning:  #177-D: function "transfer_fun_register" was declared but never referenced
+..\drivers\inc.c:   static void transfer_fun_register(TransDataEnum_t iWho, TransDataFunc_t pFunHandle)
+..\drivers\inc.c:               ^
+..\drivers\inc.c: ..\drivers\inc.c: 17 warnings, 0 errors
+compiling components.c...
+compiling completion.c...
+compiling dataqueue.c...
+compiling pipe.c...
+compiling portal.c...
+compiling ringbuffer.c...
+compiling serial.c...
+compiling cmd.c...
+compiling finsh_compiler.c...
+compiling finsh_error.c...
+compiling finsh_heap.c...
+compiling finsh_init.c...
+compiling finsh_node.c...
+compiling finsh_ops.c...
+compiling finsh_parser.c...
+compiling finsh_token.c...
+compiling finsh_var.c...
+compiling finsh_vm.c...
+compiling msh.c...
+compiling msh_cmd.c...
+compiling shell.c...
+compiling symbol.c...
+compiling dfs.c...
+compiling dfs_elm.c...
+compiling dfs_file.c...
+compiling dfs_fs.c...
+compiling dfs_posix.c...
+compiling ff.c...
+compiling def.c...
+compiling dhcp.c...
+compiling dns.c...
+compiling init.c...
+compiling memp.c...
+compiling netif.c...
+compiling pbuf.c...
+compiling raw.c...
+compiling stats.c...
+compiling sys.c...
+compiling tcp.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+compiling timers.c...
+compiling udp.c...
+compiling api_lib.c...
+compiling api_msg.c...
+compiling err.c...
+compiling netbuf.c...
+compiling netdb.c...
+compiling netifapi.c...
+compiling sockets.c...
+compiling tcpip.c...
+compiling autoip.c...
+compiling icmp.c...
+compiling igmp.c...
+compiling inet.c...
+compiling inet_chksum.c...
+compiling ip.c...
+compiling ip_addr.c...
+compiling ip_frag.c...
+compiling sys_arch.c...
+compiling etharp.c...
+compiling ethernetif.c...
+compiling slipif.c...
+linking...
+Program Size: Code=136174 RO-data=7246 RW-data=1124 ZI-data=12668  
+FromELF: creating hex file...
+"..\Output\rt-thread.axf" - 0 Error(s), 224 Warning(s).
+Build target 'pisp1064_DABox'
+compiling cpuport.c...
+compiling backtrace.c...
+compiling showmem.c...
+compiling stm32f10x_it.c...
+compiling startup.c...
+startup.c(73): warning:  #223-D: function "rt_hw_board_init" declared implicitly
+startup.c:       rt_hw_board_init();
+startup.c:       ^
+startup.c(107): warning:  #223-D: function "finsh_system_init" declared implicitly
+startup.c:      finsh_system_init(); //初始化FINSH线程
+startup.c:      ^
+startup.c(108): warning:  #223-D: function "finsh_set_device" declared implicitly
+startup.c:      finsh_set_device("uart1"); //设置FINSH使用的输入输出设备为 "uart1"
+startup.c:      ^
+startup.c(125): warning:  #550-D: variable "level" was set but never used
+startup.c:      rt_uint32_t level;
+startup.c:                  ^
+startup.c: startup.c: 4 warnings, 0 errors
+compiling application.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+application.c(112): warning:  #223-D: function "rt_hw_key_init" declared implicitly
+application.c:          rt_hw_key_init();
+application.c:          ^
+application.c(120): warning:  #223-D: function "rt_handle_key_input" declared implicitly
+application.c:                  key_input_number = rt_handle_key_input();
+application.c:                                     ^
+application.c(147): warning:  #223-D: function "rt_read_key_value" declared implicitly
+application.c:                                  if(rt_read_key_value(1) == 1)
+application.c:                                     ^
+application.c(191): warning:  #223-D: function "rt_read_key_value" declared implicitly
+application.c:                                  if(rt_read_key_value(2) == 1)
+application.c:                                     ^
+application.c(204): warning:  #223-D: function "rt_hw_led_mutex" declared implicitly
+application.c:                  rt_hw_led_mutex(g_i_key_led_handle_count);
+application.c:                  ^
+application.c(257): warning:  #177-D: variable "i_show_value" was declared but never referenced
+application.c:          int i_show_value = 0;
+application.c:              ^
+application.c(258): warning:  #177-D: variable "i_show_flag" was declared but never referenced
+application.c:          static int i_show_flag = 0;
+application.c:                     ^
+application.c(386): warning:  #223-D: function "SPI_DSP_Init" declared implicitly
+application.c:          SPI_DSP_Init();
+application.c:          ^
+application.c(399): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(405): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(413): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(419): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(426): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(432): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(439): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(445): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(452): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(458): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(465): warning:  #223-D: function "SPI_DSP_SendBytes" declared implicitly
+application.c:                          SPI_DSP_SendBytes(buff,4);
+application.c:                          ^
+application.c(471): warning:  #223-D: function "Internal_Flash_Write" declared implicitly
+application.c:                          Internal_Flash_Write(WRITE_INTERNAL_PLACE,&c_internal_value,1);
+application.c:                          ^
+application.c(475): warning:  #223-D: function "SPI_DSP_ReadByte" declared implicitly
+application.c:                  c_read_data = SPI_DSP_ReadByte();
+application.c:                                ^
+application.c(377): warning:  #177-D: variable "count" was declared but never referenced
+application.c:       unsigned int count=0;
+application.c:                    ^
+application.c(584): warning:  #223-D: function "IIC_Init" declared implicitly
+application.c:                  IIC_Init();
+application.c:                  ^
+application.c(585): warning:  #223-D: function "cs4385_set_iic_mode" declared implicitly
+application.c:                  i_CS4385_ret = cs4385_set_iic_mode(i_using_mode);//使用tdm模式
+application.c:                                 ^
+application.c(600): warning:  #186-D: pointless comparison of unsigned integer with zero
+application.c:          if((i_internal_value>5)||(i_internal_value<0))
+application.c:                                                    ^
+application.c(614): warning:  #223-D: function "rt_hw_stm32_eth_init" declared implicitly
+application.c:                  rt_hw_stm32_eth_init();
+application.c:                  ^
+application.c(615): warning:  #223-D: function "lwip_sys_init" declared implicitly
+application.c:                  lwip_sys_init();
+application.c:                  ^
+application.c(619): warning:  #223-D: function "tcpserv" declared implicitly
+application.c:                  tcpserv((void *) NULL);
+application.c:                  ^
+application.c: application.c: 35 warnings, 0 errors
+compiling echo.c...
+echo.h(10): warning:  #1-D: last line of file ends without a newline
+echo.h:                                                                                                                
+echo.h:                                                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                               ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                 ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                  ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                   ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                    ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                     ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                      ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                       ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                        ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                         ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                          ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                           ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                            ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                             ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                              ^
+echo.h(10): warning:  #1331-D: null (zero) character in input line ignored
+echo.h:                                                                                                                
+echo.h:                                                                                                               ^
+echo.c(22): warning:  #223-D: function "rt_mq_send" declared implicitly
+echo.c:       rt_mq_send(&rx_mq, &msg, sizeof(struct rx_msg));
+echo.c:       ^
+echo.c(24): warning:  #223-D: function "rt_kprintf" declared implicitly
+echo.c:         rt_kprintf("indicated echo\r\n");  
+echo.c:         ^
+echo.c(38): warning:  #223-D: function "rt_device_find" declared implicitly
+echo.c:       device = (rt_device_t)rt_device_find("uart1");  
+echo.c:                             ^
+echo.c(42): warning:  #223-D: function "rt_device_set_rx_indicate" declared implicitly
+echo.c:           rt_device_set_rx_indicate(device, uart_input);  
+echo.c:           ^
+echo.c(44): warning:  #223-D: function "rt_device_open" declared implicitly
+echo.c:           rt_device_open(device, RT_DEVICE_OFLAG_RDWR);  
+echo.c:           ^
+echo.c(50): warning:  #223-D: function "rt_mq_recv" declared implicitly
+echo.c:           result = rt_mq_recv(&rx_mq, &msg, sizeof(struct rx_msg), 50);  
+echo.c:                    ^
+echo.c(63): warning:  #223-D: function "rt_device_read" declared implicitly
+echo.c:               rx_length = rt_device_read(msg.dev, 0, &uart_rx_buffer[0], rx_length);  
+echo.c:                           ^
+echo.c(66): warning:  #223-D: function "rt_device_write" declared implicitly
+echo.c:               rt_device_write(device, 0, &uart_rx_buffer[0], rx_length); 
+echo.c:               ^
+echo.c(82): warning:  #223-D: function "rt_mq_init" declared implicitly
+echo.c:       result = rt_mq_init(&rx_mq, "mqt", &msg_pool[0], 128 - sizeof(void*), sizeof(msg_pool), RT_IPC_FLAG_FIFO);  
+echo.c:                ^
+echo.c(86): warning:  #223-D: function "rt_kprintf" declared implicitly
+echo.c:           rt_kprintf("init message queue failed.\n");   
+echo.c:           ^
+echo.c(90): warning:  #223-D: function "rt_thread_create" declared implicitly
+echo.c:       thread = (rt_thread_t)rt_thread_create("devt",  
+echo.c:                             ^
+echo.c(95): warning:  #223-D: function "rt_thread_startup" declared implicitly
+echo.c:           rt_thread_startup(thread);  
+echo.c:           ^
+echo.c: echo.c: 122 warnings, 0 errors
+compiling spi_bus.c...
+compiling tcpserver.c...
+tcpserver.c(4): warning:  #177-D: variable "send_data" was declared but never referenced
+tcpserver.c:   static const char send_data[] = "This is TCP Server."; /* 鍙戦�佺敤鍒扮殑鏁版嵁 */
+tcpserver.c:                     ^
+tcpserver.c: tcpserver.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling clock.c...
+compiling device.c...
+compiling idle.c...
+compiling ipc.c...
+compiling irq.c...
+compiling kservice.c...
+compiling mem.c...
+compiling memheap.c...
+compiling mempool.c...
+compiling module.c...
+compiling object.c...
+compiling scheduler.c...
+compiling slab.c...
+compiling thread.c...
+compiling timer.c...
+compiling board.c...
+..\drivers\board.c(187): warning:  #223-D: function "rt_hw_usart_init" declared implicitly
+..\drivers\board.c:       rt_hw_usart_init();
+..\drivers\board.c:       ^
+..\drivers\board.c: ..\drivers\board.c: 1 warning, 0 errors
+compiling led.c...
+compiling usart.c...
+compiling spi_core.c...
+compiling spi_dev.c...
+compiling spi_flash_w25qxx.c...
+compiling rt_stm32f10x_spi.c...
+compiling rt_spi_flash_device.c...
+compiling enc28j60.c...
+..\drivers\enc28j60.c(192): warning:  #550-D: variable "duplex" was set but never used
+..\drivers\enc28j60.c:       int duplex;
+..\drivers\enc28j60.c:           ^
+..\drivers\enc28j60.c(897): warning:  #177-D: variable "stm32_eth_device" was declared but never referenced
+..\drivers\enc28j60.c:   static struct rt_stm32_eth stm32_eth_device;
+..\drivers\enc28j60.c:                              ^
+..\drivers\enc28j60.c(899): warning:  #177-D: variable "tx_wait" was declared but never referenced
+..\drivers\enc28j60.c:   static struct rt_semaphore tx_wait;
+..\drivers\enc28j60.c:                              ^
+..\drivers\enc28j60.c: ..\drivers\enc28j60.c: 3 warnings, 0 errors
+compiling lcd1602.c...
+lcd1602.c(317): warning:  #223-D: function "rt_thread_delay" declared implicitly
+lcd1602.c:              rt_thread_delay( RT_TICK_PER_SECOND / 100);
+lcd1602.c:              ^
+lcd1602.c(344): warning:  #223-D: function "rt_thread_delay" declared implicitly
+lcd1602.c:                      rt_thread_delay( RT_TICK_PER_SECOND / 100);
+lcd1602.c:                      ^
+lcd1602.c: lcd1602.c: 2 warnings, 0 errors
+compiling spi_instruction.c...
+..\drivers\spi_instruction.c(121): warning:  #550-D: variable "c_value" was set but never used
+..\drivers\spi_instruction.c:           unsigned char c_value;
+..\drivers\spi_instruction.c:                         ^
+..\drivers\spi_instruction.c: ..\drivers\spi_instruction.c: 1 warning, 0 errors
+compiling key_input.c...
+..\drivers\key_input.c(10): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_press_time[KEY_MAX_NUMBER] = 0; //检测到按键按下的时间
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(11): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_press_flag[KEY_MAX_NUMBER] = 0; //检测到按键按下的标志
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(12): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\drivers\key_input.c:   static int g_i_key_pressed[KEY_MAX_NUMBER]    = 0;    //按键确实按下了的标志
+..\drivers\key_input.c:                                                   ^
+..\drivers\key_input.c(48): warning:  #940-D: missing return statement at end of non-void function "rt_read_key_value"
+..\drivers\key_input.c:   }
+..\drivers\key_input.c:   ^
+..\drivers\key_input.c: ..\drivers\key_input.c: 4 warnings, 0 errors
+compiling IIC_CS4385.c...
+compiling internal_flash.c...
+compiling protocol.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\protocol.c(47): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\protocol.c:          prot_debug("CMD:0x%02X %02X %02X %02X ", (unsigned int)pCmd[0],
+..\drivers\protocol.c:          ^
+..\drivers\protocol.c(123): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\protocol.c:          prot_debug("op key type param1 param2 param3");
+..\drivers\protocol.c:          ^
+..\drivers\protocol.c: ..\drivers\protocol.c: 9 warnings, 0 errors
+compiling do_data.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\do_data.c(49): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                                   do_error("SendData2DSP_Handle Error, Continue");
+..\drivers\do_data.c:                                   ^
+..\drivers\do_data.c(69): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(75): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Get CMD ID error");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(61): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(62): warning:  #550-D: variable "cmd_id" was set but never used
+..\drivers\do_data.c:           int cmd_id = 0;
+..\drivers\do_data.c:               ^
+..\drivers\do_data.c(107): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("prot_cmd_to_msg Error, Return");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(112): warning:  #940-D: missing return statement at end of non-void function "do_add_cmd"
+..\drivers\do_data.c:   }
+..\drivers\do_data.c:   ^
+..\drivers\do_data.c(139): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(136): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(165): warning:  #68-D: integer conversion resulted in a change of sign
+..\drivers\do_data.c:           unsigned int cmd_id = -1;
+..\drivers\do_data.c:                                 ^
+..\drivers\do_data.c(171): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Get's CMD Index Invalid");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(193): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\do_data.c:                   do_error("Table name is NULL");
+..\drivers\do_data.c:                   ^
+..\drivers\do_data.c(163): warning:  #550-D: variable "index" was set but never used
+..\drivers\do_data.c:           unsigned int index = CMD_DATA_INDEX_INVALID;
+..\drivers\do_data.c:                        ^
+..\drivers\do_data.c(164): warning:  #550-D: variable "table_name" was set but never used
+..\drivers\do_data.c:           const char *table_name = NULL;
+..\drivers\do_data.c:                       ^
+..\drivers\do_data.c(165): warning:  #550-D: variable "cmd_id" was set but never used
+..\drivers\do_data.c:           unsigned int cmd_id = -1;
+..\drivers\do_data.c:                        ^
+..\drivers\do_data.c(166): warning:  #177-D: variable "oper_id" was declared but never referenced
+..\drivers\do_data.c:           enum SqliteOperateId oper_id = ID_GET;
+..\drivers\do_data.c:                                ^
+..\drivers\do_data.c(168): warning:  #177-D: variable "ret" was declared but never referenced
+..\drivers\do_data.c:           int ret = 0;
+..\drivers\do_data.c:               ^
+..\drivers\do_data.c: ..\drivers\do_data.c: 24 warnings, 0 errors
+compiling inc.c...
+..\drivers\inc.h(324): warning:  #1295-D: Deprecated declaration database_init - give arg types
+..\drivers\inc.h:   int database_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(333): warning:  #1295-D: Deprecated declaration database_exit - give arg types
+..\drivers\inc.h:   void database_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(341): warning:  #1295-D: Deprecated declaration database_reboot - give arg types
+..\drivers\inc.h:   void database_reboot();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(349): warning:  #1295-D: Deprecated declaration transfer_handle_register - give arg types
+..\drivers\inc.h:   void transfer_handle_register();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(359): warning:  #1295-D: Deprecated declaration resource_init - give arg types
+..\drivers\inc.h:   int resource_init();
+..\drivers\inc.h:       ^
+..\drivers\inc.h(367): warning:  #1295-D: Deprecated declaration resource_exit - give arg types
+..\drivers\inc.h:   void resource_exit();
+..\drivers\inc.h:        ^
+..\drivers\inc.h(375): warning:  #1295-D: Deprecated declaration dsp_init - give arg types
+..\drivers\inc.h:   void dsp_init();
+..\drivers\inc.h:        ^
+..\drivers\inc.c(236): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("get_cmd_desc_s Error, Key error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(249): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\drivers\inc.c:       if ((index < CMD_DATA_INDEX_MIN ) || (index > CMD_DATA_INDEX_MAX)) {
+..\drivers\inc.c:                  ^
+..\drivers\inc.c(265): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get index invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(300): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("get_cmd_desc_s Error, Key error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(318): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Not find description, Type error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(324): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get cmd_desc_head invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(329): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\drivers\inc.c:       if ((index < CMD_DATA_INDEX_MIN) || (index > CMD_DATA_INDEX_MAX)) {
+..\drivers\inc.c:                  ^
+..\drivers\inc.c(330): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("Get index invalid");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(381): warning:  #223-D: function "rt_kprintf" declared implicitly
+..\drivers\inc.c:               inc_error("inc_transfer_fun_register Error");
+..\drivers\inc.c:               ^
+..\drivers\inc.c(372): warning:  #177-D: function "transfer_fun_register" was declared but never referenced
+..\drivers\inc.c:   static void transfer_fun_register(TransDataEnum_t iWho, TransDataFunc_t pFunHandle)
+..\drivers\inc.c:               ^
+..\drivers\inc.c: ..\drivers\inc.c: 17 warnings, 0 errors
+compiling components.c...
+compiling completion.c...
+compiling dataqueue.c...
+compiling pipe.c...
+compiling portal.c...
+compiling ringbuffer.c...
+compiling serial.c...
+compiling cmd.c...
+compiling finsh_compiler.c...
+compiling finsh_error.c...
+compiling finsh_heap.c...
+compiling finsh_init.c...
+compiling finsh_node.c...
+compiling finsh_ops.c...
+compiling finsh_parser.c...
+compiling finsh_token.c...
+compiling finsh_var.c...
+compiling finsh_vm.c...
+compiling msh.c...
+compiling msh_cmd.c...
+compiling shell.c...
+compiling symbol.c...
+compiling dfs.c...
+compiling dfs_elm.c...
+compiling dfs_file.c...
+compiling dfs_fs.c...
+compiling dfs_posix.c...
+compiling ff.c...
+compiling def.c...
+compiling dhcp.c...
+compiling dns.c...
+compiling init.c...
+compiling memp.c...
+compiling netif.c...
+compiling pbuf.c...
+compiling raw.c...
+compiling stats.c...
+compiling sys.c...
+compiling tcp.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+compiling timers.c...
+compiling udp.c...
+compiling api_lib.c...
+compiling api_msg.c...
+compiling err.c...
+compiling netbuf.c...
+compiling netdb.c...
+compiling netifapi.c...
+compiling sockets.c...
+compiling tcpip.c...
+compiling autoip.c...
+compiling icmp.c...
+compiling igmp.c...
+compiling inet.c...
+compiling inet_chksum.c...
+compiling ip.c...
+compiling ip_addr.c...
+compiling ip_frag.c...
+compiling sys_arch.c...
+compiling etharp.c...
+compiling ethernetif.c...
+compiling slipif.c...
+linking...
+Program Size: Code=136174 RO-data=7246 RW-data=1124 ZI-data=12668  
+FromELF: creating hex file...
+"..\Output\pisp1064_DABox.axf" - 0 Error(s), 223 Warning(s).
