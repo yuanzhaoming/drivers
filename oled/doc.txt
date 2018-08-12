@@ -1,0 +1,11 @@
+IIC_Init();
+OLED_Init();
+OLED_ShowStr(90,1,"yuan",1); 
+
+for(i=0;i<4;i++) 
+{ 
+	OLED_ShowCN(10+i*16,0,i);  
+}
+
+OLED_DrawBMP(0,0,128,8,(unsigned char *)BMP1);
+
