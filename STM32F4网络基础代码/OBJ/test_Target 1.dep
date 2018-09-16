@@ -1,0 +1,115 @@
+Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f429xx.s)(0x567FB5A5)(--cpu Cortex-M4.fp -g --apcs=interwork -IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 521" --pd "STM32F429xx SETA 1"--list ..\obj\startup_stm32f429xx.lst --xref -o ..\obj\startup_stm32f429xx.o --depend ..\obj\startup_stm32f429xx.d)
+F (.\test.c)(0x5B9D316E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\test.o --omf_browse ..\obj\test.crf --depend ..\obj\test.d)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (..\SYSTEM\usart\usart.h)(0x569F345C)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+I (..\ETHERNET\stm32f4x7_eth.h)(0x5714A1E8)
+I (..\ETHERNET\stm32f4x7_eth_conf.h)(0x5714A1E8)
+F (..\SYSTEM\delay\delay.c)(0x57145F50)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+F (..\SYSTEM\sys\sys.c)(0x570CB98F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+F (..\SYSTEM\usart\usart.c)(0x569F345C)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (..\SYSTEM\usart\usart.h)(0x569F345C)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+F (..\readme.txt)(0x5B82A843)()
+F (..\ETHERNET\lan8720.c)(0x5B9D30F3)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\lan8720.o --omf_browse ..\obj\lan8720.crf --depend ..\obj\lan8720.d)
+I (..\ETHERNET\lan8720.h)(0x5714A1E8)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (..\ETHERNET\stm32f4x7_eth.h)(0x5714A1E8)
+I (..\ETHERNET\stm32f4x7_eth_conf.h)(0x5714A1E8)
+I (..\SYSTEM\usart\usart.h)(0x569F345C)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+I (..\PCF8574\pcf8574.h)(0x5714A1E9)
+I (..\i2c\myiic.h)(0x5714A1E8)
+F (..\ETHERNET\stm32f4x7_eth.c)(0x5714A1E8)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\stm32f4x7_eth.o --omf_browse ..\obj\stm32f4x7_eth.crf --depend ..\obj\stm32f4x7_eth.d)
+I (..\ETHERNET\stm32f4x7_eth.h)(0x5714A1E8)
+I (..\ETHERNET\stm32f4x7_eth_conf.h)(0x5714A1E8)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
+F (..\i2c\myiic.c)(0x5714A1E8)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\myiic.o --omf_browse ..\obj\myiic.crf --depend ..\obj\myiic.d)
+I (..\i2c\myiic.h)(0x5714A1E8)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+F (..\PCF8574\pcf8574.c)(0x5714A1E9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\i2c -I ..\PCF8574 -I ..\ETHERNET-IC:\Users\Administrator\Desktop\STM32F4ÍøÂç»ù´¡´úÂë\USER\RTE-I"D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"D:\Program Files (x86)\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="521" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\pcf8574.o --omf_browse ..\obj\pcf8574.crf --depend ..\obj\pcf8574.d)
+I (..\PCF8574\pcf8574.h)(0x5714A1E9)
+I (..\SYSTEM\sys\sys.h)(0x57135CB8)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (D:\Program Files (x86)\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (..\i2c\myiic.h)(0x5714A1E8)
+I (..\SYSTEM\delay\delay.h)(0x57146005)

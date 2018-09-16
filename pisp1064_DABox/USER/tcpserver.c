@@ -137,7 +137,7 @@ void tcpserv(void* parameter)
 		for (i = 0; i < CLIENT_NUMS; i++) {
 			client[i].fd = -1;  
 		}
-      	while(1)
+    while(1)
 		{
 			rset = allset; 
 			nready = select(maxfd+1, &rset, NULL, NULL, NULL);    //µ÷ÓÃselect
